@@ -1,0 +1,27 @@
+behaviors:
+  3DBallAgent:
+    trainer_type: ppo                    # Ajan, Proximal Policy Optimization (PPO) algoritmasý ile eðitilecek.
+
+    hyperparameters:
+      batch_size: 512                    # Bir eðitim güncellemesi için kullanýlan örnek sayýsý. Daha büyük batch boyutlarý, daha iyi genelleþtirme saðlar ancak daha fazla bellek ve iþlem gücü gerektirir.
+      buffer_size: 20480                 # Deneyim havuzunun maksimum boyutu. Genellikle batch_size'in en az 20 katý olmalýdýr. Bu deðer, eðitim sýrasýnda ne kadar veri toplanacaðýný belirler.
+      learning_rate: 3e-4                # Aðýrlýklarýn güncellenme hýzýný belirleyen öðrenme oraný. Daha büyük deðerler daha hýzlý öðrenmeye neden olabilir ancak modelin kararsýz olmasýna yol açabilir.
+      beta: 0.01                         # Entropy regularization katsayýsý. Ajanýn rastgelelik seviyesini belirler. Daha büyük deðerler (örneðin 0.1 veya 0.2), ajaný daha fazla keþfetmeye teþvik eder.
+      epsilon: 0.2                       # PPO’nun clip parametresi. Yeni politika ile eski politika arasýndaki deðiþikliðin ne kadar büyük olabileceðini sýnýrlar. Genellikle 0.1 - 0.3 arasýnda olur.
+      lambd: 0.95                        # GAE (Generalized Advantage Estimation) parametresi. Ödüllerin ne kadar yayýlacaðýný kontrol eder. Daha yüksek deðerler (0.95 - 0.99), daha uzun vadeli ödülleri dikkate alýr.
+      num_epoch: 5                       # Her batch'teki verilerin kaç kez eðitimde kullanýlacaðýný belirler. Daha yüksek deðerler öðrenmeyi iyileþtirebilir ancak eðitim süresini uzatýr.
+      learning_rate_schedule: linear     # Öðrenme oranýnýn zamanla nasýl deðiþeceðini belirler. "linear", zaman içinde azalan bir öðrenme oraný anlamýna gelir.
+
+    network_settings:
+      normalize: true                    # Giriþ deðerlerini normalize ederek uç deðerlerin etkisini azaltýr. Daha karmaþýk ortamlarda açýk býrakýlmasý önerilir.
+      hidden_units: 512                  # Sinir aðýndaki her katmanda bulunan nöron sayýsý. Daha basit problemlerde küçük (örneðin 32), daha karmaþýk sistemlerde büyük (örneðin 512 veya daha fazla) tutulmalýdýr.
+      num_layers: 3                      # Sinir aðýndaki gizli katman (hidden layer) sayýsý. Daha fazla katman, daha karmaþýk iliþkileri öðrenmeye yardýmcý olabilir ancak eðitim süresini artýrýr.
+
+    reward_signals:
+      extrinsic:
+        gamma: 0.995                     # Gelecekteki ödüllerin ne kadar önemli olduðunu belirler. Daha büyük deðerler (0.99'a yakýn) ajaný uzun vadeli düþünmeye iter.
+        strength: 1.0                    # Ödül sinyalinin aðýrlýðýný belirler. Genellikle kod içinde deðiþtirilmesi daha uygundur.
+
+    max_steps: 6.0e6                     # Eðitim sürecinde toplam atýlacak maksimum adým sayýsý. Þu an 6 milyon olarak ayarlanmýþ.
+    time_horizon: 128                    # Ajanýn her seferinde topladýðý deneyim sayýsý. Eðer bu limite ulaþýlýrsa, deneyimler topluca iþlenir ve eðitim baþlatýlýr. Varsayýlan deðeri 64’tür.
+    summary_freq: 25000                  # TensorBoard'a eðitim istatistiklerini yazdýrma sýklýðý. Her 25.000 adýmdan sonra güncellenir.

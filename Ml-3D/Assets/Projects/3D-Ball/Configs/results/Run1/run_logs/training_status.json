@@ -1,0 +1,56 @@
+{
+    "3DBallAgent": {
+        "checkpoints": [
+            {
+                "steps": 499963,
+                "file_path": "results\\Run1\\3DBallAgent\\3DBallAgent-499963.onnx",
+                "reward": 500.8417538234166,
+                "creation_time": 1740386412.2083452,
+                "auxillary_file_paths": [
+                    "results\\Run1\\3DBallAgent\\3DBallAgent-499963.pt"
+                ]
+            },
+            {
+                "steps": 999936,
+                "file_path": "results\\Run1\\3DBallAgent\\3DBallAgent-999936.onnx",
+                "reward": 500.8438399921764,
+                "creation_time": 1740386884.6889048,
+                "auxillary_file_paths": [
+                    "results\\Run1\\3DBallAgent\\3DBallAgent-999936.pt"
+                ]
+            },
+            {
+                "steps": 1499879,
+                "file_path": "results\\Run1\\3DBallAgent\\3DBallAgent-1499879.onnx",
+                "reward": null,
+                "creation_time": 1740387367.657152,
+                "auxillary_file_paths": [
+                    "results\\Run1\\3DBallAgent\\3DBallAgent-1499879.pt"
+                ]
+            },
+            {
+                "steps": 1527567,
+                "file_path": "results\\Run1\\3DBallAgent\\3DBallAgent-1527567.onnx",
+                "reward": 500.8984655652727,
+                "creation_time": 1740387390.7842147,
+                "auxillary_file_paths": [
+                    "results\\Run1\\3DBallAgent\\3DBallAgent-1527567.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1527567,
+            "file_path": "results\\Run1\\3DBallAgent.onnx",
+            "reward": 500.8984655652727,
+            "creation_time": 1740387390.7842147,
+            "auxillary_file_paths": [
+                "results\\Run1\\3DBallAgent\\3DBallAgent-1527567.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.6.0+cpu"
+    }
+}

@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "com.unity.ai.navigation": {
-      "version": "2.0.5",
+      "version": "2.0.6",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -46,7 +46,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.rider": {
-      "version": "3.0.31",
+      "version": "3.0.34",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -78,6 +78,27 @@
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
+    },
+    "com.unity.ml-agents": {
+      "version": "3.0.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.sentis": "2.1.0",
+        "com.unity.modules.physics": "1.0.0",
+        "com.unity.modules.jsonserialize": "1.0.0",
+        "com.unity.modules.imageconversion": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.ml-agents.extensions": {
+      "version": "file:D:/ML Agent Package/com.unity.ml-agents.extensions",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {
+        "com.unity.ml-agents": "3.0.0",
+        "com.unity.modules.physics": "1.0.0"
+      }
     },
     "com.unity.multiplayer.center": {
       "version": "1.0.0",
@@ -144,6 +165,17 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+    "com.unity.sentis": {
+      "version": "2.1.1",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.burst": "1.8.17",
+        "com.unity.collections": "2.4.3",
+        "com.unity.modules.imageconversion": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
     "com.unity.shadergraph": {
       "version": "17.0.3",
       "depth": 1,
@@ -154,7 +186,7 @@
       }
     },
     "com.unity.test-framework": {
-      "version": "1.4.5",
+      "version": "1.4.6",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -175,7 +207,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.timeline": {
-      "version": "1.8.7",
+      "version": "1.8.8",
       "depth": 0,
       "source": "registry",
       "dependencies": {
