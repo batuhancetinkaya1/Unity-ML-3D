@@ -1,0 +1,4 @@
+facing dir lazım bize ve de sadece o yöne hareket edebilşmeli bir de facing dirin nerye baktığına bilmemiz lazım belki raycast?
+bir de şu var geri geri gitme nedeni forwardı falan - ile çarpmam olabilir algoritma ilk başta girdileri 1 verme eğiliminde olduğundan sanırım ben yönleri tam tersi verirsemsanırım kafası karışıp o da girdiyi ters veriyo
+alına ödüle ve cezaya göre ground rengi değişebilir hız şu an isnpectorda 4 o 2 yapılabilir
+cezaya doğru ilerleme cezası yüksek olabilir onu alatabiliriz
