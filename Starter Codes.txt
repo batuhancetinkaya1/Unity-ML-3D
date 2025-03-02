@@ -1,8 +1,12 @@
 cd C:\Users\Batuhan\Documents\GitHub\Unity-ML-3D                                                # venv olduğu dosyaya ulaşıyoruz
-venv\Scripts\activate                                                                           # venv aktif edilir
+venv\Scripts\activate
+                                                                           # venv aktif edilir
 cd C:\Users\Batuhan\Documents\GitHub\Unity-ML-3D\Ml-3D\Assets\Projects\3D-Ball\Configs          # Her projenin unique config'i kullanılmalı burada 3D-Ball projesi için kullanılıyor
 cd C:\Users\Batuhan\Documents\GitHub\Unity-ML-3D\Ml-3D\Assets\Projects\SampleProject\Configs    # Örnek olarak burada da SampleProject Config'i kullanılıyor
 
 mlagents-learn 3DBall.yaml --run-id=Run1                                                        # 3DBall.yaml unique yaml dosyası. Her projeye id vermek önemli.
 mlagents-learn BasicAgent.yaml --run-id=Run1
+mlagents-learn PushBlock_Alone.yaml --run-id=Run1
+mlagents-learn PushBlock_Collab.yaml --run-id=Run2
+mlagents-learn PushBlock_Collab.yaml --run-id=Run3
 tensorboard --logdir results --port 6006                                                        # localhostta tensorboarda bakmak için.

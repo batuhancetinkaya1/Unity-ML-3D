@@ -7,11 +7,20 @@ TagManager:
   - Big
   - Small
   - Punishment
+  - goal
+  - agent
+  - ground
+  - block
+  - wall
+  - platform
+  - blockLight
+  - blockMid
+  - blockHeavy
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - ground
   - Water
   - UI
   - 

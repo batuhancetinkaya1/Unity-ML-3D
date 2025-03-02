@@ -1,0 +1,65 @@
+{
+    "AloneAgent": {
+        "checkpoints": [
+            {
+                "steps": 1999994,
+                "file_path": "results\\Run1\\AloneAgent\\AloneAgent-1999994.onnx",
+                "reward": 4.984647574983997,
+                "creation_time": 1740859623.7908185,
+                "auxillary_file_paths": [
+                    "results\\Run1\\AloneAgent\\AloneAgent-1999994.pt"
+                ]
+            },
+            {
+                "steps": 2499997,
+                "file_path": "results\\Run1\\AloneAgent\\AloneAgent-2499997.onnx",
+                "reward": 4.984873273557284,
+                "creation_time": 1740860610.6590347,
+                "auxillary_file_paths": [
+                    "results\\Run1\\AloneAgent\\AloneAgent-2499997.pt"
+                ]
+            },
+            {
+                "steps": 2999999,
+                "file_path": "results\\Run1\\AloneAgent\\AloneAgent-2999999.onnx",
+                "reward": 4.9848903194627265,
+                "creation_time": 1740861603.859259,
+                "auxillary_file_paths": [
+                    "results\\Run1\\AloneAgent\\AloneAgent-2999999.pt"
+                ]
+            },
+            {
+                "steps": 3499989,
+                "file_path": "results\\Run1\\AloneAgent\\AloneAgent-3499989.onnx",
+                "reward": 4.985259204663729,
+                "creation_time": 1740862561.038679,
+                "auxillary_file_paths": [
+                    "results\\Run1\\AloneAgent\\AloneAgent-3499989.pt"
+                ]
+            },
+            {
+                "steps": 3526577,
+                "file_path": "results\\Run1\\AloneAgent\\AloneAgent-3526577.onnx",
+                "reward": null,
+                "creation_time": 1740862615.09467,
+                "auxillary_file_paths": [
+                    "results\\Run1\\AloneAgent\\AloneAgent-3526577.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 3526577,
+            "file_path": "results\\Run1\\AloneAgent.onnx",
+            "reward": null,
+            "creation_time": 1740862615.09467,
+            "auxillary_file_paths": [
+                "results\\Run1\\AloneAgent\\AloneAgent-3526577.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.6.0+cpu"
+    }
+}

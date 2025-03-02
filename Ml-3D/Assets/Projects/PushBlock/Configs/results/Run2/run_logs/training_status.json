@@ -1,0 +1,65 @@
+{
+    "CollabAgent": {
+        "checkpoints": [
+            {
+                "steps": 4499768,
+                "file_path": "results\\Run2\\CollabAgent\\CollabAgent-4499768.onnx",
+                "reward": 0.0,
+                "creation_time": 1740939135.5042746,
+                "auxillary_file_paths": [
+                    "results\\Run2\\CollabAgent\\CollabAgent-4499768.pt"
+                ]
+            },
+            {
+                "steps": 4999864,
+                "file_path": "results\\Run2\\CollabAgent\\CollabAgent-4999864.onnx",
+                "reward": 0.0,
+                "creation_time": 1740940132.6514552,
+                "auxillary_file_paths": [
+                    "results\\Run2\\CollabAgent\\CollabAgent-4999864.pt"
+                ]
+            },
+            {
+                "steps": 5499812,
+                "file_path": "results\\Run2\\CollabAgent\\CollabAgent-5499812.onnx",
+                "reward": 0.0,
+                "creation_time": 1740941197.3868575,
+                "auxillary_file_paths": [
+                    "results\\Run2\\CollabAgent\\CollabAgent-5499812.pt"
+                ]
+            },
+            {
+                "steps": 5999932,
+                "file_path": "results\\Run2\\CollabAgent\\CollabAgent-5999932.onnx",
+                "reward": 0.0,
+                "creation_time": 1740942200.571303,
+                "auxillary_file_paths": [
+                    "results\\Run2\\CollabAgent\\CollabAgent-5999932.pt"
+                ]
+            },
+            {
+                "steps": 6000444,
+                "file_path": "results\\Run2\\CollabAgent\\CollabAgent-6000444.onnx",
+                "reward": 0.0,
+                "creation_time": 1740942200.9123485,
+                "auxillary_file_paths": [
+                    "results\\Run2\\CollabAgent\\CollabAgent-6000444.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 6000444,
+            "file_path": "results\\Run2\\CollabAgent.onnx",
+            "reward": 0.0,
+            "creation_time": 1740942200.9123485,
+            "auxillary_file_paths": [
+                "results\\Run2\\CollabAgent\\CollabAgent-6000444.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.2.2+cu121"
+    }
+}

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7feaaad5d936374f96f681bc21f7976, type: 3}
+  m_Name: CollabSettingsData
+  m_EditorClassIdentifier: 
+  moveSpeed: 3
+  rotationSpeed: 200
+  spawnAreaMultiplier: 0.9
+  spawnAreaMarginMultiplier: 0.9
+  rewardMaterial: {fileID: 2100000, guid: 31c5e15d46c049a4ab945a9538703f0c, type: 2}
+  punishMaterial: {fileID: 2100000, guid: d5e01b7a11239c2458088b71a5534ee7, type: 2}
+  groundBaseColor: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 1}
+  maxEpisodeSteps: 5000
+  lightBlockMass: 10
+  midBlockMass: 100
+  heavyBlockMass: 150
+  numberOfLightBlocks: 2
+  numberOfMidBlocks: 2
+  numberOfHeavyBlocks: 2
+  numberOfAgents: 3
